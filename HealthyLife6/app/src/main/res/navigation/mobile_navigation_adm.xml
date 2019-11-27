@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_adm"
+    app:startDestination="@+id/navigation_adm_receita"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/navigation_adm_receita"
+        android:name="com.example.healthylife6.adm.fragment.MenuRecFragment"
+        android:label="@string/menu_receita"
+        tools:layout="@layout/fragment_menu_rec" />
+
+    <fragment
+        android:id="@+id/navigation_adm_exercicio"
+        android:name="com.example.healthylife6.adm.fragment.MenuExerFragment"
+        android:label="@string/menu_exercicio"
+        tools:layout="@layout/fragment_menu_exer" />
+
+    <fragment
+        android:id="@+id/navigation_adm_perfil"
+        android:name="com.example.healthylife6.adm.fragment.AdmPerfilFragment"
+        android:label="@string/menu_perfil"
+        tools:layout="@layout/fragment_adm_perfil" />
+
+</navigation>

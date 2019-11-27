@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item
+            android:title="Receitas"
+            android:icon="@drawable/ic_receita"
+            android:id="@+id/navigation_receita"
+            app:showAsAction="always"/>
+
+        <item
+            android:title="Exercício"
+            android:icon="@drawable/ic_exercicio"
+            android:id="@+id/navigation_exercicio"
+            app:showAsAction="always"/>
+
+        <item
+            android:title="Perfil"
+            android:icon="@drawable/ic_perfil"
+            android:id="@+id/navigation_perfil"
+            app:showAsAction="always"/>
+
+
+</menu>

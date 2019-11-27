@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/gradient"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="center">
+
+    <ImageView
+        android:background="#0A36A1B0"
+        android:layout_height="131dp"
+        android:layout_width="match_parent"
+        app:srcCompat="@drawable/log12"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:id="@+id/image"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/titulo"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:fontFamily="@font/budokanroundedbold"
+        android:textColor="@android:color/white"
+        android:text="Healthy Life"/>
+
+</LinearLayout>
+
+</LinearLayout>

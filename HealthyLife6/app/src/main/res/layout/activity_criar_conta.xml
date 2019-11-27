@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#Ffffff"
+    tools:context=".CriarContaActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp"
+        android:text="Insira todos os seus dados"
+        android:fontFamily="@font/caviardreams"
+        android:textColor="#566573"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <EditText
+        android:id="@+id/txt_nome"
+        android:hint="Nome"
+        android:textSize="22sp"
+        android:fontFamily="@font/louisgeorgecafe"
+        android:layout_width="383dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="3dp" />
+
+    <LinearLayout
+        android:layout_width="383dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="22dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:text="Sexo"
+            android:textSize="22sp"
+            android:fontFamily="@font/louisgeorgecafe"
+            android:layout_marginBottom="3dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerSexo"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="90dp"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txt_idade"
+        android:hint="Idade"
+        android:textSize="22sp"
+        android:fontFamily="@font/louisgeorgecafe"
+        android:layout_width="383dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="3dp" />
+
+    <EditText
+        android:id="@+id/txt_peso"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:hint="Peso (Kg)"
+        android:textSize="22sp"
+        android:fontFamily="@font/louisgeorgecafe"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="183dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp"
+        android:ems="2"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txt_altura"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="183dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp"
+        android:ems="2"
+        android:inputType="text"
+        android:hint="Altura (cm)"
+        android:textSize="22sp"
+        android:fontFamily="@font/louisgeorgecafe"/>
+
+    <EditText
+        android:id="@+id/txt_email"
+        android:layout_width="383dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="183dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:textSize="22sp"
+        android:fontFamily="@font/louisgeorgecafe"/>
+
+    <EditText
+        android:id="@+id/txt_senha"
+        android:layout_width="383dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="183dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp"
+        android:inputType="textPassword"
+        android:maxLength="6"
+        android:hint="Senha"
+        android:textSize="22sp"
+        android:fontFamily="@font/louisgeorgecafe"/>
+
+    <Button
+        android:id="@+id/btn_cad_user"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:shape="oval"
+        android:text="Cadastrar"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:fontFamily="@font/louisgeorgecafe"
+        android:textColor="@color/preto"
+        android:background="#A3E4D7"/>
+
+
+</LinearLayout>

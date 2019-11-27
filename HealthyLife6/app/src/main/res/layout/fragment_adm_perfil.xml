@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F3F4"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".adm.fragment.AdmPerfilFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nome_adm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="48dp"
+                    android:hint="Nome do usuário"
+                    android:textColor="@color/preto"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="20dp" />
+
+                <TextView
+                    android:id="@+id/email_adm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="Email do usuário"
+                    android:textColor="@color/preto"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:elevation="10dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Editar perfil"
+                android:fontFamily="@font/louisgeorgecafe"
+                android:textColor="@color/preto"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/btnEditarPerfilAdm"
+                android:layout_width="19dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="300dp"
+                app:srcCompat="@drawable/seta" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:id="@+id/btnExcluir"
+            android:layout_height="52dp"
+            android:layout_marginLeft="20dp"
+            android:elevation="10dp"
+            android:gravity="center_vertical">
+
+        <TextView
+                android:id="@+id/excluir_adm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Excluir conta"
+                android:fontFamily="@font/louisgeorgecafe"
+                android:textColor="@color/preto"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:id="@+id/btnSair"
+            android:layout_height="52dp"
+            android:layout_marginLeft="20dp"
+            android:elevation="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/sair_adm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Sair"
+                android:fontFamily="@font/louisgeorgecafe"
+                android:textColor="@color/preto"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>

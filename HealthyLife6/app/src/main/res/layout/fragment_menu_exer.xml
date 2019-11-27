@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".adm.fragment.MenuExerFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#F2F3F4"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="675dp"
+            android:background="#73C6B6">
+
+            <ImageView android:layout_height="50dp"
+                android:layout_width="95dp"
+                app:srcCompat="@drawable/logo"
+                android:layout_marginVertical="5dp"
+                android:layout_marginRight="100dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="600dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_height="130dp"
+            android:layout_width="236dp"
+            android:layout_gravity="center"
+            app:cardElevation="7dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="28dp"
+            android:id="@+id/cardViewCadExer">
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="70dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/exer_cad"
+                android:fontFamily="@font/louisgeorgecafe"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="28dp"
+                android:textSize="17dp"
+                android:textColor="@color/preto"
+                android:text="Cadastrar Exercício"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_height="130dp"
+            android:layout_width="236dp"
+            android:layout_gravity="center"
+            app:cardElevation="7dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="45dp"
+            android:id="@+id/cardViewListarExer">
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="70dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/exer_listar"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/louisgeorgecafe"
+                android:textSize="17dp"
+                android:textColor="@color/preto"
+                android:text="Listar Exercício"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>

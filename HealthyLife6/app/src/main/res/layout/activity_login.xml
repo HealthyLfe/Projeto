@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/background_light">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="217dp"
+            android:layout_weight="1"
+            android:background="@drawable/gradient"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="95dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="235dp"
+            app:srcCompat="@drawable/log12" />
+    </FrameLayout>
+
+    <LinearLayout
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/email_login"
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/louisgeorgecafe"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/senha_login"
+            android:hint="Senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/louisgeorgecafe"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/btn_Login"
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:text="Entrar"
+            android:textStyle="bold"
+            android:fontFamily="@font/louisgeorgecafe"
+            android:textColor="@color/preto"
+            android:background="#A3E4D7"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/esqueci_senha"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/louisgeorgecafe"
+            android:textSize="20sp"
+            android:typeface="sans"
+            android:textColor="#566573"
+            android:text="Esqueci minha senha"/>
+
+        <TextView
+            android:id="@+id/btn_Cadastrar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:typeface="sans"
+            android:fontFamily="@font/louisgeorgecafe"
+            android:text="Não possui conta? Cadastre-se"
+            android:textSize="20sp"
+            android:textColor="#566573"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F3F4"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".usuario.fragment.DetalhesCafeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="515dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="360dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/cafe_det"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/logo"/>
+
+                <TextView
+                    android:id="@+id/tit_cafe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="22dp"
+                    android:ems="6"
+                    android:hint="Título"
+                    android:fontFamily="@font/louisgeorgecafe"
+                    android:textColor="@color/preto" />
+
+
+                <TextView
+                    android:id="@+id/ingred_cafe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="22dp"
+                    android:ems="6"
+                    android:hint="Ingrediente"
+                    android:fontFamily="@font/louisgeorgecafe"
+                    android:textColor="@color/preto"  />
+
+                <TextView
+                    android:id="@+id/desc_cafe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="22dp"
+                    android:ems="6"
+                    android:hint="Modo de Preparo"
+                    android:fontFamily="@font/louisgeorgecafe"
+                    android:textColor="@color/preto"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/voltar_cafe"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="250dp"
+                    android:text="VOLTAR"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/louisgeorgecafe"
+                    android:textColor="@color/preto"
+                    android:background="#A3E4D7"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".adm.fragment.CadReceitaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="600dp"
+        android:background="#73C6B6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="600dp"
+            android:background="#73C6B6">
+
+            <ImageView
+                android:layout_height="50dp"
+                android:layout_width="95dp"
+                app:srcCompat="@drawable/logo"
+                android:layout_marginVertical="5dp"
+                android:layout_marginRight="100dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:id="@+id/btnUpload_rec"
+            android:background="@android:color/darker_gray"
+            android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/txt_titulo"
+        android:hint="Título"
+        android:textSize="20sp"
+        android:fontFamily="@font/louisgeorgecafe"
+        android:layout_width="375dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="3dp" />
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="22dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:text="Categoria"
+            android:fontFamily="@font/louisgeorgecafe"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="3dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerCat"
+            android:layout_width="185dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="90dp"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txt_ingred"
+        android:hint="Ingredientes"
+        android:textSize="20sp"
+        android:fontFamily="@font/louisgeorgecafe"
+        android:layout_width="375dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="3dp" />
+
+    <EditText
+        android:id="@+id/txt_descricao"
+        android:layout_width="375dp"
+        android:layout_height="45dp"
+        android:hint="Modo de Preparo"
+        android:textSize="20sp"
+        android:fontFamily="@font/louisgeorgecafe"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="183dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:ems="2"
+        android:inputType="text" />
+        
+    <Button
+        android:id="@+id/btn_cad_rec"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:shape="oval"
+        android:text="Cadastrar receita"
+        android:textStyle="bold"
+        android:fontFamily="@font/louisgeorgecafe"
+        android:textColor="@color/preto"
+        android:background="#A3E4D7"/>
+
+        <Button
+            android:id="@+id/btn_can_rec"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:shape="oval"
+            android:text="Cancelar"
+            android:textStyle="bold"
+            android:fontFamily="@font/louisgeorgecafe"
+            android:textColor="@color/preto"
+            android:background="#A3E4D7"/>
+
+</LinearLayout>
+
+</FrameLayout>

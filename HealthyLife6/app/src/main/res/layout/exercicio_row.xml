@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#F2F3F4"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_row_exer"
+            android:layout_width="123dp"
+            android:layout_height="128dp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/logo"/>
+
+        <TextView
+            android:id="@+id/titulo_row_exer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nome do exercício"
+            android:fontFamily="@font/caviardreams"
+            android:textStyle="bold"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="60dp"
+            android:layout_gravity="right"/>
+
+        <Button
+            android:id="@+id/btnEditar_row_exer"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="135dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/editar"/>
+
+        <Button
+            android:id="@+id/btnExluir_row_exer"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="135dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/excluir"/>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

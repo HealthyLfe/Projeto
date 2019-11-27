@@ -1,0 +1,13 @@
+<resources>
+
+    <color name="colorPrimary">#A2D9CE</color>
+    <color name="colorPrimaryDark">#17A589</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="fundoBranco">#ffffff</color>
+    <color name="fundoVerde">#48C9B0</color>
+    <color name="preto">#1f1d1d</color>
+    <color name="letra_menu">#33395F</color>
+
+</resources>

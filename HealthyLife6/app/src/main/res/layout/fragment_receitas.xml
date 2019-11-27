@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F3F4"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".usuario.fragment.ReceitasFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/fundoBranco">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Dica importante que você não pode deixar de seguir:"
+                android:fontFamily="@font/caviardreams"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/preto"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Antes de iniciar uma rotina nutricional, recomendamos que consulte especialistas"
+                android:fontFamily="@font/caviardreams"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/preto"/>
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Café da manhã"
+                android:fontFamily="@font/caviardreams"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/preto"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewListaReceitaCafe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Almoço"
+                android:fontFamily="@font/caviardreams"
+                android:textStyle="bold"
+                android:layout_marginLeft="7dp"
+                android:textSize="20sp"
+                android:textColor="@color/preto"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewListaReceitaAlmoco"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Jantar"
+                android:textSize="20sp"
+                android:fontFamily="@font/caviardreams"
+                android:textStyle="bold"
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/preto"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewListaReceitaJanta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>

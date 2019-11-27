@@ -1,0 +1,53 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="190dp"
+    android:layout_gravity="start"
+    android:layout_marginLeft="55dp"
+    android:background="#F9F9F9"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_janta"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/logo"/>
+
+        <TextView
+            android:id="@+id/titulo_row_janta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nome da Receita"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="start"/>
+
+        <Button
+            android:id="@+id/btnEditar_janta"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="160dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/editar"/>
+
+        <Button
+            android:id="@+id/btnExluir_janta"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="160dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/excluir"/>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

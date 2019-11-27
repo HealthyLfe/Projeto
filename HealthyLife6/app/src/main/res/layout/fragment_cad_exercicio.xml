@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adm.fragment.CadExercicioFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="600dp"
+        android:background="#73C6B6">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:id="@+id/btnUpload_exer"
+            android:background="@android:color/darker_gray"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/txt_titulo_exer"
+            android:hint="Título"
+            android:textSize="20sp"
+            android:fontFamily="@font/louisgeorgecafe"
+            android:layout_width="375dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="3dp" />
+
+        <EditText
+            android:id="@+id/txt_tempo"
+            android:hint="Tempo"
+            android:textSize="20sp"
+            android:fontFamily="@font/louisgeorgecafe"
+            android:layout_width="375dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="3dp" />
+
+        <EditText
+            android:id="@+id/txt_descricao_exer"
+            android:layout_width="375dp"
+            android:layout_height="45dp"
+            android:hint="Descrição"
+            android:textSize="20sp"
+            android:fontFamily="@font/louisgeorgecafe"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="183dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:ems="2"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btn_cad_exer"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:shape="oval"
+            android:text="Cadastrar exercício"
+            android:textStyle="bold"
+            android:fontFamily="@font/louisgeorgecafe"
+            android:textColor="@color/preto"
+            android:background="#A3E4D7"/>
+
+        <Button
+            android:id="@+id/btn_can_exer"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:shape="oval"
+            android:text="Cancelar"
+            android:textStyle="bold"
+            android:fontFamily="@font/louisgeorgecafe"
+            android:textColor="@color/preto"
+            android:background="#A3E4D7"/>
+
+    </LinearLayout>
+
+</FrameLayout>
